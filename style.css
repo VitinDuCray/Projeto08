@@ -1,0 +1,71 @@
+:root {
+    --purple-base: #592DA1;
+    --purple-home: #391D66;
+    --purple-bg: #8442ED;
+    --purple-light: #B193F6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--purple-base);
+    font-family: "Rubik", sans-serif;
+    height: 100VH;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 33px;
+}
+
+.depoimentos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    gap: 10px;
+    background-color: var(--purple-bg);
+    transition: all 0.3s ease-in-out;
+}
+
+.person {
+    width: 80px;
+    border: 4px solid var(--purple-base);
+    height: auto;
+    border-radius: 50%;
+}
+
+.fala {
+    width: 380px;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #00000027;
+}
+
+.depoimento:hover {
+    transform: scale(1.05);
+}
